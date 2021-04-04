@@ -1,0 +1,130 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-image: url(pictures/background4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;	
+}
+div{
+	color:white;
+}
+h1{
+	font-size:3vw;
+}
+p{
+	font-size:1.8vw;
+}
+/*hovereffect in dark blue*/
+.hover:hover {
+  background-color: rgb(29, 38, 47);
+
+}
+/*makes the maincontainer 50% smaller which includes all the other containers*/
+.width{
+	width:50%;
+}
+.borderadius{
+	border-radius: 10px;
+}
+/*Logo styles*/
+.logosizenavbar{
+	height: 65px;
+	width: 65px;
+}
+/* Center logotype and adjust size */
+.logosizestart{
+	height: 40%;
+	width: 40%;
+	border-radius: 20px; 
+	margin:20px;
+}
+
+/*Logo styles ends here*/
+/*Navbar color*/
+.navbarcolor{
+	 background-color: black;
+}
+
+/*css for sections on mainsite*/
+.sectionmargin{
+	margin-top:20px;
+	margin-bottom:40px;
+ 	border-radius: 20px;
+ 	text-align: center;
+}
+
+.sectionpadding{
+	padding:15px;
+}
+
+.sectioncolor{
+	background-color: rgb(29, 38, 47);
+}
+/*shadow for pictures*/
+.boxshadow {
+  box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+
+.paddingheader{
+	padding:20px 20px 4px;
+}
+.paddingtext{
+	padding: 5px 20px 5px;
+}
+
+.centertext{
+	text-align: center;
+}
+/*container for sponsorboxes with margin and float*/
+.sponsorcontainer{
+	width: 45%;
+	float:left;
+	margin-bottom:40px;
+
+}
+/*Style for space between sponsorboxes*/
+.sponsormargin1{
+	margin-right: 5%;
+	border-radius: 20px;
+}
+.sponsormargin2{
+	margin-left: 5%;
+	border-radius: 20px;
+}
+/*Style for space between sponsorboxes ends here*/
+
+/*style for Xtrfy img sponsor*/
+.sponsorimg1{
+	width: 65%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*Style for DigitalFilms img sponsor*/
+.sponsorimg2{
+	width: 40%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*Style for footer*/
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background-color:white;	
+  color: white;
+  text-align: center;
+}
+
+.border{
+	border: solid 1px red;
+}
+
+
+
+
+
