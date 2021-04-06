@@ -9,11 +9,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;	
-	min-height: 100%;
- 	display: grid;
- 	grid-template-rows: 0.2fr auto;
-
-  	
+	/*min-height: 100%;*/
 
 }
 div{
@@ -130,17 +126,24 @@ p{
   width: 100%;
   background-color:#999999;	
   margin-top: auto;
+  box-shadow: 0 0 20px white;
 }
 .linkcolor{
 	color:white;
 }
 .footerimgstyle{
-	width:100px;
+	width:90px;
 	padding:20px;
+	
+}
+.logostylefooter{
+	width: 90px;
+
 }
 .attributesize{
 	font-size: 10px;
 }
+
 /*HERE ENDS CSS FOR FOOTER*/
 
 
