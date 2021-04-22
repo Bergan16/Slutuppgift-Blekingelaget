@@ -1,0 +1,183 @@
+html{
+	height:100%;
+}
+div{
+	color:white;
+}
+.body1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-image: url(pictures/background4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.body2{
+	ont-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-image: url(pictures/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+/*hovereffect in dark blue*/
+.hover:hover {
+  background-color: rgb(29, 38, 47);
+
+}
+/*makes the maincontainer 30% smaller which includes all the other containers*/
+.width{
+	/*width:70%;*/
+}
+.borderadius{
+	border-radius: 10px;
+}
+.textfont{
+	font-family: 'New Tegomin', serif;
+}
+/*Logo styles*/
+.logosizenavbar{
+	height: 65px;
+	width: 65px;
+}
+
+/* Center logotype and adjust size */
+.logosizestart{
+	height: 50%;
+	width: 50%;
+	border-radius: 20px; 
+	margin:20px;
+}
+
+/*Logo styles ends here*/
+/*Navbar color*/
+.navbarcolor{
+	 background-color: black;
+}
+
+/*css for sections on mainsite (page 1)*/
+.sectionmargin{
+	margin-top:20px;
+	margin-bottom:40px;
+ 	border-radius: 20px;
+ 	
+}
+
+.sectioncolor{
+	background-color: rgb(29, 38, 47);
+}
+/*shadow for pictures*/
+.boxshadow {
+  box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+.paddingheader{
+	padding:20px 20px 4px;
+}
+.paddingtext{
+	padding: 5px 20px 5px;
+}
+
+.centertext{
+	text-align: center;
+}
+
+.colorborder{
+	border:solid 2px black;
+}
+
+
+
+/*HERE STARTS FLEXBOX FOR SPONSORS ON PAGE 1*/
+/*Flexbox container*/
+.flexbox-container{
+	/*display:flex;*/
+	/*flex-wrap: wrap;*/
+}
+/*Flexbox item 1*/
+.flexbox-item{
+	background-color: rgb(29, 38, 47);
+}
+.margin-flexitem{
+	margin-top: 30px;
+}
+/*style for Xtrfy img sponsor*/
+.flexbox-img1{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*Style for DigitalFilms img sponsor*/
+.flexbox-img2{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+
+/*HERE ENDS FLEXBOX FOR SPONSORS ON PAGE 1*/
+
+/*HERE STARTS CSS FOR FOOTER*/
+
+/*Footer style*/
+.footer{
+  width: 100%;
+  background-color:#999999;	
+  margin-top: auto;
+  box-shadow: 0 0 20px white;
+}
+/*Social media logo style*/
+.footerimgstyle{
+	width:90px;
+	padding:20px;
+	margin: 15px;
+	
+}
+/*sizing and size of logotype*/
+.logostylefooter{
+	width: 90px;
+	margin:10px;
+
+}
+/* style for attribution*/
+.attributesize{
+	font-size: 10px;
+}
+.linkcolor{
+	color:white;
+}
+.partners{
+	padding: 30px;
+}
+/*style for attribution ends here*/
+
+/*HERE ENDS CSS FOR FOOTER*/
+
+
+/*HERE STARTS CSS FOR PAGE 2(SPELARE)*/
+
+.nickpadding{
+	padding: 30px;
+}
+
+.playerlogo{
+	width: 100%;
+	background-position: center;
+	max-width: 200px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.italictext{
+	font-style: italic;
+}
+.playertext{
+	font-size: 18px;
+}
+.sectionmarginplayers{
+	margin:20px;
+	box-shadow: 0 0 10px black;
+}
