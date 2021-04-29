@@ -9,6 +9,7 @@ html{
 	--bg-flexitem: rgb(29, 38, 47);
 	--color-linkcolor: white;
 	--bg-hover:  rgb(29, 38, 47);
+	--bg-section2: #8c8c8c;
 
 }
 /*html colors for light theme*/
@@ -22,6 +23,7 @@ html[data-theme='light']{
 	--bg-flexitem: #cccccc;
 	--color-linkcolor: black;
 	--bg-hover: #f2f2f2;
+	--bg-section2: white;
 }
 p{
 	color:var(--color-text);
@@ -32,6 +34,10 @@ p{
 /*section color*/
 .sectioncolor{
 	background-color:var(--bg-section);
+}
+/*mainly for the image gallery section*/
+.sectioncolor2{
+	background-color:var(--bg-section2);
 }
 /*p-tag color*/
 .textcolor{
@@ -54,7 +60,9 @@ p{
 /*hovereffect color toggler*/
 .hover:hover {
   background-color: var(--bg-hover);
+   box-shadow:  0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
 }
+
 /*White text for toggle theme text all the time*/
 .alwayswhitetext{
 	color:white;
@@ -88,6 +96,9 @@ p{
 }
 .bodyimg4{
 	background-image: url(pictures/background4.jpg);
+}
+.bodyimg5{
+	background-image: url(pictures/background5.jpg);
 }
 
 .borderadius{
@@ -152,10 +163,10 @@ p{
 	border:solid 2px red;
 }
 
-/*HERE STARTS FLEXBOX FOR SPONSORS ON PAGE 1*/
+/*HERE STARTS CSS FOR GRID SPONSORS ON PAGE 1*/
 
-.margin-flexitem{
-	margin-top: 30px;
+.marginitem{
+	margin-top:30px;
 }
 /*style for Xtrfy img sponsor*/
 .flexbox-img1{
@@ -289,8 +300,8 @@ label:active:after {
 	height:300px;
 	width: 100%;
 }
-.cardmargin{
-	margin-bottom: 20px;
+.cardpadding{
+	padding-bottom: 20px;
 }
 
 /*HERE ENDS CSS FOR PAGE 3(Tips)*/
@@ -299,7 +310,7 @@ label:active:after {
 .sponsorimg{
 	height: 200px;
 	width:200px;
-	padding:30px;
+	padding:20px;
 }
 .socialmedia-bgimg{
 	background-image: url(pictures/socialmedia-bgimg.jpg);
@@ -314,10 +325,58 @@ label:active:after {
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px black;
 }
-
-
-
-
-
-
 /*HERE ENDS CSS FOR PAGE 4 (PRESS-SiDA)*/
+
+/*HERE STARTS CSS FOR PAGE 5(Bildgalleri)*/
+.paddinggalleryheader{
+	padding:30px;
+}
+.rowgallery {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columngallery {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px 10px;
+}
+
+.columngallery, .imggallery {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columngallery {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columngallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*HERE ENDS CSS FOR PAGE 5(Bildgalleri)*/
+
+/*HERE STARTS CSS FOR PAGE 7(KONTAKT)*/
+.inbeddedmap{
+	box-shadow: 10px 10px 10px;
+	border-radius: 15px;
+	width: 100%;
+	padding-top: 5px;
+}
+/*HERE ENDS CSS FOR PAGE 7(KONTAKT)*/
