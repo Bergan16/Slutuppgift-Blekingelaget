@@ -1,0 +1,328 @@
+/*html colors for default theme*/
+html{
+	height:100%;
+	--bg-section: rgb(29, 38, 47);
+	--color-text: white;
+	--color-headings: white;
+	--color-navbar: black;
+	--bg-footer: #999999;
+	--bg-flexitem: rgb(29, 38, 47);
+	--color-linkcolor: white;
+	--bg-hover:  rgb(29, 38, 47);
+
+}
+/*html colors for light theme*/
+html[data-theme='light']{
+	height:100%;
+	--bg-section: #e6e6e6;
+	--color-text:black;
+	--color-headings: black;
+	--color-navbar: #d9d9d9;
+	--bg-footer: #e6e6e6;
+	--bg-flexitem: #cccccc;
+	--color-linkcolor: black;
+	--bg-hover: #f2f2f2;
+}
+p{
+	color:var(--color-text);
+}
+.headercolor{
+	color:var(--color-headings);
+}
+/*section color*/
+.sectioncolor{
+	background-color:var(--bg-section);
+}
+/*p-tag color*/
+.textcolor{
+	color:var(color-text);
+}
+/*Navbar color*/
+.navbarcolor{
+	 background-color: var(--color-navbar);
+}
+/*footer color*/
+.footercolor{
+	background-color: var(--bg-footer);
+}
+.flexitemcolor{
+	background-color: var(--bg-flexitem);
+}
+.linkcolor{
+	color:var(--color-linkcolor);
+}
+/*hovereffect color toggler*/
+.hover:hover {
+  background-color: var(--bg-hover);
+   box-shadow:  0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
+}
+
+/*White text for toggle theme text all the time*/
+.alwayswhitetext{
+	color:white;
+}
+.alwaysblacktext{
+	color:black;
+}
+/*Css for all bodies*/
+.bodyall{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+
+}
+/*body img page 1*/
+.bodyimg1{
+	background-image: url(pictures/background1.jpg);
+	
+}
+/*body img page 2*/
+.bodyimg2{
+	background-image: url(pictures/background2.jpg);
+	
+}
+/*Body img page 3*/
+.bodyimg3{
+	background-image: url(pictures/background3.jpg);
+}
+.bodyimg4{
+	background-image: url(pictures/background4.jpg);
+}
+
+.borderadius{
+	border-radius: 10px;
+}
+.textfont{
+	font-family: 'New Tegomin', serif;
+}
+/*Logo styles*/
+.logosizenavbar{
+	height: 65px;
+	width: 65px;
+	border-radius: 20px;
+}
+
+/* Center logotype and adjust size */
+.logosizestart{
+	height: 45%;
+	width: 60%;
+	border-radius: 20px; 
+	margin-top: 20px;
+
+
+	
+
+}
+
+/*Logo styles ends here*/
+
+/*css for sections on mainsite (page 1)*/
+.sectionmargin{
+	margin-top:20px;
+	margin-bottom:40px;
+ 	border-radius: 20px;
+ 	
+}
+.sectionmarginsponsor{
+	margin-top:20px;
+	margin-bottom:40px;
+ 	border-radius: 20px;
+ 	visability:hidden;
+ 	
+}
+
+/*shadow for pictures*/
+.boxshadow {
+  box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+.paddingheader{
+	padding:20px 20px 4px;
+}
+.paddingtext{
+	padding: 5px 20px 5px;
+}
+
+.centertext{
+	text-align: center;
+}
+
+.colorborder{
+	border:solid 2px red;
+}
+
+/*HERE STARTS CSS FOR GRID SPONSORS ON PAGE 1*/
+
+.marginitem{
+	margin-top:30px;
+}
+/*style for Xtrfy img sponsor*/
+.flexbox-img1{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*Style for DigitalFilms img sponsor*/
+.flexbox-img2{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+
+/*HERE ENDS FLEXBOX FOR SPONSORS ON PAGE 1*/
+
+/*HERE STARTS CSS FOR FOOTER*/
+
+/*Footer style*/
+.footer{
+  width: 100%;
+  margin-top: auto;
+  box-shadow: 0 0 20px white;
+}
+/*Social media logo style*/
+.footerimgstyle{
+	width:90px;
+	padding:20px;
+	margin: 15px;
+	
+}
+/*sizing and size of logotype*/
+.logostylefooter{
+	width: 90px;
+	margin:10px;
+
+}
+/* style for attribution*/
+.attributesize{
+	font-size: 10px;
+}
+.partners{
+	padding: 30px;
+}
+/*style for attribution ends here*/
+
+/*HERE ENDS CSS FOR FOOTER*/
+
+/*Code for Theme change and the button*/
+.themechange{
+	display:grid;
+	grid-template-columns: 90% auto;
+	padding:15px;
+	
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: rgb(29, 38, 47);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #00e600;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+/*Code for Theme change and the button ends here*/
+
+
+/*HERE STARTS CSS FOR PAGE 2(SPELARE)*/
+
+.nickpadding{
+	padding: 30px;
+}
+
+.playerlogo{
+	width: 100%;
+	background-position: center;
+	max-width: 200px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+/*font style*/
+.italictext{
+	font-style: italic;
+}
+.playertext{
+	font-size: 18px;
+}
+.sectionmarginplayers{
+	margin:20px;
+	box-shadow: 0 0 10px black;
+}
+
+/*HERE ENDS CSS FOR PAGE 2(SPELARE)*/
+/*HERE STARTS CSS FOR PAGE 3(Tips)*/
+.imgcsgo{
+	height:300px;
+	width: 100%;
+}
+.cardmargin{
+	margin-bottom: 20px;
+}
+
+/*HERE ENDS CSS FOR PAGE 3(Tips)*/
+/*HERE STARTS CSS FOR PAGE 4 (PRESS-SiDA)*/
+/*styling sponsor images to start of page*/
+.sponsorimg{
+	height: 200px;
+	width:200px;
+	padding:20px;
+}
+.socialmedia-bgimg{
+	background-image: url(pictures/socialmedia-bgimg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.inbeddeditem{
+	width:100%;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
+}
+/*HERE ENDS CSS FOR PAGE 4 (PRESS-SiDA)*/
+
+/*HERE STARTS CSS FOR PAGE 7(KONTAKT)*/
+.inbeddedmap{
+	box-shadow: 10px 10px 10px;
+	border-radius: 15px;
+	width: 100%;
+	padding-top: 5px;
+}
+/*HERE ENDS CSS FOR PAGE 7(KONTAKT)*/
