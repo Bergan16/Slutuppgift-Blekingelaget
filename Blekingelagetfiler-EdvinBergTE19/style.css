@@ -1,0 +1,462 @@
+/*html colors for default theme(dark)*/
+html{
+	height:100%;
+	--bg-section: rgb(29, 38, 47);
+	--color-text: white;
+	--color-headings: white;
+	--color-navbar: black;
+	--bg-footer: #999999;
+	--color-linkcolor: white;
+	--bg-hover:  rgb(29, 38, 47);
+	--bg-sectiongallery: black;
+
+}
+/*html colors for light theme*/
+html[data-theme='light']{
+	height:100%;
+	--bg-section: #e6e6e6;
+	--color-text:black;
+	--color-headings: black;
+	--color-navbar: #d9d9d9;
+	--bg-footer: #d9d9d9;
+	--color-linkcolor: black;
+	--bg-hover: #f2f2f2;
+	--bg-sectiongallery: white;
+}
+p{
+	color:var(--color-text);
+}
+/*color for headers*/
+.headercolor{
+	color:var(--color-headings);
+}
+/*section color*/
+.sectioncolor{
+	background-color:var(--bg-section);
+}
+/*mainly for the image gallery section*/
+.sectioncolor2{
+	background-color:var(--bg-sectiongallery);
+}
+/*p-tag color*/
+.textcolor{
+	color:var(--color-text);
+}
+/*Navbar color*/
+.navbarcolor{
+	background-color: var(--color-navbar);
+}
+/*footer color*/
+.footercolor{
+	background-color: var(--bg-footer);
+}
+/*Attribute link colors on footer*/
+.linkcolor{
+	color:var(--color-linkcolor);
+}
+/*hovereffect color toggler*/
+.hover:hover {
+	background-color: var(--bg-hover);
+	box-shadow:  0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
+}
+
+/*White text for toggle theme text all the time*/
+.alwayswhitetext{
+	color:white;
+}
+.alwaysblacktext{
+	color:black;
+}
+/*Css for all bodies*/
+.bodyall{
+	font-size: 18px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+
+}
+/*body img page 1*/
+.bodyimg1{
+	background-image: url(pictures/background1.jpg);
+	
+}
+/*body img page 2*/
+.bodyimg2{
+	background-image: url(pictures/background2.jpg);
+	
+}
+.bodyimg3{
+	background-image: url(pictures/background3.jpg);
+}
+
+.borderadius{
+	border-radius: 10px;
+}
+p,h1,h2,h3,h4,h5{
+	font-family: 'New Tegomin', serif;
+}
+/*Logo styles*/
+.logosizenavbar{
+	height: 65px;
+	width: 65px;
+	border-radius: 20px;
+}
+
+/* Center logotype and adjust size */
+.logosizestart{
+	height: 45%;
+	width: 60%;
+	border-radius: 20px; 
+	margin-top: 20px;
+}
+/*Logo styles ends here*/
+
+/*css for sections on mainsite (page 1)*/
+.sectionmargin{
+	margin-top:20px;
+	margin-bottom:40px;
+	border-radius: 20px;
+}
+.sectionmarginplayers{
+	margin-top:20px;
+	margin-bottom:40px;
+}
+
+/*shadow for pictures*/
+.boxshadow {
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*css for text and headers*/
+.paddingheader{
+	padding: 20px 20px 4px;
+}
+.paddingtext{
+	padding: 5px 20px 5px;
+}
+.paddingtextbio{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.centertext{
+	text-align: center;
+}
+/*TEMP*/
+.colorborder{
+	border:solid 2px black;
+}
+
+/*HERE STARTS CSS FOR FOOTER*/
+
+/*Footer style*/
+.footer{
+	width: 100%;
+	margin-top: auto;
+	box-shadow: 0 0 20px white;
+}
+/*Social media logo style*/
+.footerimgstyle{
+	width:90px;
+	padding:20px;
+	margin: 15px;
+	
+}
+/*sizing and size of logotype*/
+.logostylefooter{
+	width: 90px;
+	margin:10px;
+
+}
+/* style for attribution*/
+.attributesize{
+	font-size: 10px;
+}
+.partners{
+	padding: 30px;
+}
+/*style for attribution ends here*/
+
+/*HERE ENDS CSS FOR FOOTER*/
+
+/*Code for Theme change and the button*/
+.themechange{
+	display:grid;
+	grid-template-columns: 90% auto;
+	padding:15px;
+	
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: rgb(29, 38, 47);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #00e600;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+/*Code for Theme change and the button ends here*/
+
+/*HERE STARTS CSS MAINLY FOR PAGE 1(STARTSIDA)*/
+/*HERE STARTS CSS FOR GRID SPONSORS ON PAGE 1*/
+/*Margin bottom on the columns creates a gap between them when on mobile phone*/
+.marginbottom{
+	margin-bottom:20px;
+}
+.sponsorimgcinema{
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*style for Xtrfy img sponsor*/
+.flexbox-img1{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+/*Style for DigitalFilms img sponsor*/
+.flexbox-img2{
+	width: 50%;
+	border-radius: 20px;
+	margin:20px;
+	box-shadow: 15px 15px 8px #0d0d0d;
+}
+
+/*HERE ENDS CSS GRID FOR SPONSORS ON PAGE 1*/
+/*HERE ENDS CSS MAINLY FOR PAGE 1(STARTSIDA)*/
+
+/*HERE STARTS CSS FOR PAGE 2(SPELARE)*/
+
+.nickpadding{
+	padding: 30px;
+}
+
+.playerlogo{
+	width: 100%;
+	background-position: center;
+	max-width: 200px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+/*font style*/
+.italictext{
+	font-style: italic;
+}
+.playertext{
+	font-size: 18px;
+}
+/*Css for table*/
+/*Styling of table*/
+table{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+/*fixing margin and font size*/
+table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+/*Styling table and tablerow*/
+table tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: .35em;
+}
+/*Styling table, tableheader, and tabledata*/
+table th, td {
+	padding: .625em;
+	text-align: center;
+}
+/*Styling table and tableheader*/
+table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+/*Setting max with for collapse and style for when resizing view*/
+@media screen and (max-width: 1200px) {
+	table {
+		border: 0;
+	}
+
+	table caption {
+		font-size: 1.3em;
+	}
+
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	}
+
+	table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	}
+
+	table td::before {
+
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table td:last-child {
+	border-bottom: 0;
+}
+}
+/*Css for table on Page 2 ends here*/
+/*HERE ENDS CSS MAINLY FOR PAGE 2(SPELARE)*/
+/*HERE STARTS CSS MAINLY FOR PAGE 3(Tips)*/
+.imgcsgo{
+	height:300px;
+	width: 100%;
+}
+.paddingbottom{
+	padding-bottom: 20px;
+}
+
+/*HERE ENDS CSS MAINLY FOR PAGE 3(Tips)*/
+/*HERE STARTS CSS MAINLY FOR PAGE 4 (PRESS-SiDA)*/
+/*styling sponsor images to start of page*/
+.sponsorimg{
+	height: 200px;
+	width:200px;
+	padding:20px;
+}
+.socialmedia-bgimg{
+	background-image: url(pictures/socialmedia-bgimg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.inbeddedvideo{
+	width:100%;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
+	border:0;
+}
+/*HERE ENDS CSS MAINLY FOR PAGE 4 (PRESS-SiDA)*/
+
+/*HERE STARTS CSS MAINLY FOR PAGE 5(Bildgalleri)*/
+.paddinggalleryheader{
+	padding:30px;
+}
+.rowgallery {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columngallery {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px 10px;
+}
+
+.columngallery, .imggallery {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.columngallery {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.columngallery {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+/*HERE ENDS CSS MAINLY FOR PAGE 5(Bildgalleri)*/
+/*HERE STARTS CSS MAINLY FOR PAGE 6(Kalender)*/
+/*make space between the two calendars*/
+.sectionmargincalender{
+	margin-bottom:40px;
+}
+
+.headerpaddingaside{
+	padding:20px 4px 4px 4px;
+}
+.marginevent{
+	margin-bottom:45px;
+}
+/*HERE ENDS CSS MAINLY FOR PAGE 6(Kalender)*/
+/*HERE STARTS CSS MAINLY FOR PAGE 7(KONTAKT)*/
+.inbeddedmap{
+	box-shadow: 10px 10px 10px;
+	border-radius: 15px;
+	width: 100%;
+	padding-top: 5px;
+	width: 100%;
+	height: 450px;
+	border:0;
+}
+/*HERE ENDS CSS MAINLY FOR PAGE 7(KONTAKT)*/
+
+
